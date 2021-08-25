@@ -21,7 +21,8 @@
           "executor": "@nrwl/next:server",
           "options": {
             "buildTarget": "next-todo:build",
-            "dev": true
+            "dev": true,
+            "port": 4200
           },
           "configurations": {
             "production": {
@@ -126,7 +127,8 @@
           "executor": "@nrwl/web:dev-server",
           "options": {
             "buildTarget": "shop:build",
-            "hmr": true
+            "hmr": true,
+            "port": 4300
           },
           "configurations": {
             "production": {
