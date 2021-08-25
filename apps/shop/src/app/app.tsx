@@ -3,6 +3,8 @@ import styles from './app.module.css';
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
+import Title from 'components/Title';
+
 export function App() {
   return (
     <div className={styles.app}>
@@ -10,6 +12,7 @@ export function App() {
         <Logo width="75" height="75" />
         <h1>Welcome to shop!</h1>
       </header>
+      <Title />
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx.</p>
