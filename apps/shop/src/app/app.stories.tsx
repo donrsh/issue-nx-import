@@ -3,7 +3,7 @@ import { App } from './app';
 
 export default {
   component: App,
-  title: 'App',
+  title: 'App/App',
 } as Meta;
 
 const Template: Story<any> = (args) => <App {...args} />;
