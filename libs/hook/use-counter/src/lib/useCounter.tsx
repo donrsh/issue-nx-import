@@ -1,10 +1,7 @@
 import { useState, useCallback } from 'react';
 
-/* eslint-disable-next-line */
-export interface useCounterOptions {}
-
-export function useCounter(options?: useCounterOptions) {
-  const [count, setCount] = useState(0);
+export function useCounter(initialCount = 0) {
+  const [count, setCount] = useState(initialCount);
 
   return {
     count,
