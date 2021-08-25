@@ -1,6 +1,27 @@
 {
   "version": 2,
   "projects": {
+    "hook-use-counter": {
+      "root": "libs/hook/use-counter",
+      "sourceRoot": "libs/hook/use-counter/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/hook/use-counter/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/hook/use-counter"],
+          "options": {
+            "jestConfig": "libs/hook/use-counter/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
     "next-todo": {
       "root": "apps/next-todo",
       "sourceRoot": "apps/next-todo",
@@ -226,7 +247,8 @@
       },
       "library": {
         "style": "css",
-        "linter": "eslint"
+        "linter": "eslint",
+        "pascalCaseFiles": true
       }
     },
     "@nrwl/next": {

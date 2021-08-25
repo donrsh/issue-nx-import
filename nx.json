@@ -33,6 +33,9 @@
     ]
   },
   "projects": {
+    "hook-use-counter": {
+      "tags": []
+    },
     "next-todo": {
       "tags": []
     },
