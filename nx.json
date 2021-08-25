@@ -27,6 +27,13 @@
     ]
   },
   "projects": {
+    "next-todo": {
+      "tags": []
+    },
+    "next-todo-e2e": {
+      "tags": [],
+      "implicitDependencies": ["next-todo"]
+    },
     "shop": {
       "tags": []
     },
