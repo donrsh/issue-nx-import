@@ -1,1 +1,2 @@
-export * from './lib/HookUseCounter';
+export * from './lib/useCounter';
+export { default } from './lib/useCounter';
