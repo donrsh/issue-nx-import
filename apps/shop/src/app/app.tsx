@@ -3,7 +3,7 @@ import styles from './app.module.css';
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
-import Title from '../components/Title';
+import Title from 'components/Title';
 
 import useConter from '@nx-try/hook/use-counter';
 
